@@ -13,7 +13,7 @@ function PasswordReset() {
   //handlesubmit coding
   const handlesubmit = async () => {
     const payload = {
-      newPassword: password,
+      newPassword: password, 
       confirmPassword: confirmPassword
     }
     const res = await fetch(`${API}/users/reset-password/${randomString}`, {
